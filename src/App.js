@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import MasterBar from './components/MasterBar';
+
+const theme = createTheme({
+  palette: {
+    type: 'dark',
+    primary: {
+      main: '#ee0263',
+    },
+    secondary: {
+      main: '#1392e1',
+    },
+    info: {
+      main: '#9821f3',
+    },
+  },
+})
 
 function App() {
   return (
+    <ThemeProvider theme={theme}>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      
+      <header>
+      <MasterBar></MasterBar>
       </header>
     </div>
+    </ThemeProvider>
   );
 }
 
