@@ -20,3 +20,20 @@
   margin-right: 32px;
 
 }
+
+
+.grid_switch {
+  justify-content: left;
+  margin-top: 48px;
+  margin-left: 32px;
+  margin-right: 32px;
+  display: flex;
+}
+
+.switch{
+  margin-bottom: 10px;
+}
+
+#active{
+  margin-top: 7px;
+}

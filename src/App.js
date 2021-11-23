@@ -3,6 +3,7 @@ import './App.css';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import MasterBar from './components/MasterBar';
 import InputSlider_scale from './components/InputSlider_scale';
+import SwitchDefault from './components/Switch';
 
 const theme = createTheme({
   palette: {
@@ -29,6 +30,7 @@ function App() {
       </header>
 
       <body>
+        <SwitchDefault></SwitchDefault>
         <InputSlider_scale></InputSlider_scale>
       </body>
     </div>

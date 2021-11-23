@@ -20,7 +20,7 @@ export default function MasterBar() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" >
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Master
           </Typography>
         </Toolbar>
